@@ -1,0 +1,49 @@
+Cases:
+  - title: login
+    cases:
+      - page: 1
+        name: 打开网页
+        method: goto
+        url: https://crm-console.hbdev.club/
+        assert: pass
+
+      - page: 2
+        name: 点击谷歌登录
+        method: click
+        selector: '.S9gUrf-YoZ4jf'
+        assert: pass
+
+      - page: 3
+        name: 输入邮箱
+        method: fill
+        selector: '.rFrNMe.N3Hzgf.jjwyfe.QBQrY.zKHdkd.sdJrJc.Tyc9J .whsOnd.zHQkBf'
+        value: zixiangli@happybears.net
+        assert: pass
+
+      - page: 3
+        name: 点击下一步
+        method: click
+        selector: text="下一步"
+        assert: pass
+
+      - page: 3
+        name: 输入密码
+        method: fill
+        selector: '#password .whsOnd.zHQkBf'
+        value: 2673760996@@
+        assert: pass
+
+      - page: 3
+        name: 点击下一步
+        method: click
+        selector: text="下一步"
+        assert: pass
+
+      - page: 1
+        name: pass
+        method: click
+        selector: text="Settings"
+        assert: pass
+
+#  - title: pass
+
