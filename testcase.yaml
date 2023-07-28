@@ -1,0 +1,47 @@
+#loginpage:
+#  - title: 登录成功
+#    des: 登录成功测试用例
+#    cases:
+#      - name: 访问IFA控制台
+#        method: goto
+#        url:
+#
+#      - name: 使用谷歌账号登录
+#        method: click
+#        selctor: .S9gUrf-YoZ4jf
+#
+#      - name: 输入账号
+#        method: fill
+#        selctor: '[name="identifier"]'
+#        value: ''
+#
+#      - name: 点击下一步
+#        method: click
+#        selctor: '[text="下一步"]'
+#
+#      - name: 输入密码
+#        method: fill
+#        selctor: '[name="Passwd"]'
+#        value: 'jxy@2000'
+#
+#      - name: 点击登录按钮
+#        method: click
+#        selctor: '[text="下一步"]'
+
+loginpage:
+  - title: 登录成功
+    des: 登录成功测试用例
+    cases:
+      - name: 访问淘宝页面
+        method: goto
+        url: https://www.taobao.com/
+
+
+      - name: 搜索
+        method: fill
+        selctor: '#q'
+        value: '手办'
+
+      - name: 搜索
+        method: click
+        selctor: '.btn-search.tb-bg'
